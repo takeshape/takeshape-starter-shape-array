@@ -7,8 +7,18 @@ import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
-const Hero = () => (
-  <Background color="bg-gray-100">
+export interface HeroProps {
+  section: {
+    headingExample: string,
+    backgroundImageExample: {
+      sourceUrl: string,
+    }
+    descriptionExample: string,
+  }
+}
+
+const Hero = ({section}:HeroProps) => (
+  <Background background={section.backgroundImageExample?.sourceUrl} color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
@@ -28,11 +38,10 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {section.headingExample || "Loading..."}
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description={section.descriptionExample || "Loading..."}
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
             <a>

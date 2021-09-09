@@ -1,0 +1,5 @@
+name: Landing Page Shape Array Example
+description: "This project demonstrates how to use TakeShape's Shape Array to create a landing page with NextJS."
+categories:
+  - examples
+  - recipes

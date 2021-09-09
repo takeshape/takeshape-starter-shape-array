@@ -4,13 +4,24 @@ import { Button } from '../button/Button';
 import { CTABanner } from '../cta/CTABanner';
 import { Section } from '../layout/Section';
 
-const Banner = () => (
+interface BannerProps{
+  offer:{
+    callToAction:string,
+    signupUrl:string,
+    campaignId?:string
+  }
+}
+
+const Banner = ({offer}:BannerProps) => (
   <Section>
     <CTABanner
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      subtitle="Start your Free Trial."
+      title="Start your Free Trial."
+      subtitle={
+        offer.callToAction ||
+        "Join now."
+      }
       button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
+        <Link href={offer.signupUrl || "/"}>
           <a>
             <Button>Get Started</Button>
           </a>
