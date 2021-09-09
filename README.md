@@ -16,7 +16,7 @@ To learn more about the template, read the [template's TEMPLATE-README file](./T
 
 ![Useful Snippets](./images/useful-snippets.png)
 
-4. In the terminal on your local machine, clone this repo with `git clone https://github.com/takeshape/takeshape-starter-javascript`
+4. In the terminal on your local machine, clone this repo with `git clone https://github.com/takeshape/takeshape-starter-shape-array`
 
 5. Open the project directory and edit `.env` to replace the text that says `YOUR-ENDPOINT-HERE` with your API Endpoint. Replace the text that says `YOUR-API-KEY-HERE` with your API Key.
 
