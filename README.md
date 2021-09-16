@@ -18,13 +18,15 @@ To learn more about the template, read the [template's TEMPLATE-README file](./T
 
 4. In the terminal on your local machine, clone this repo with `git clone https://github.com/takeshape/takeshape-starter-shape-array`
 
-5. Open the project directory and edit `.env` to replace the text that says `YOUR-ENDPOINT-HERE` with your API Endpoint. Replace the text that says `YOUR-API-KEY-HERE` with your API Key.
+5. Cd into the newly-created project directory, and run `npm install
+
+6. Open the project directory in your favorite IDE, then edit `.env.local-example` to replace the text that says `YOUR-ENDPOINT-HERE` with your API Endpoint. Replace the text that says `YOUR-API-KEY-HERE` with your API Key. When you're done, rename the file to `.env`.
 
 6. Run `npm run dev` in your console.
 
-7. Open `localhost:3000` in your browser.
+6. Open `localhost:3000` in your browser.
 
-8. Viola! Your template should be working!
+6. Viola! Your template should be working!
 
 ![The template page](./images/final-page.png)
 
